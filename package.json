@@ -1,0 +1,25 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "Node.js api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/findayush/node-farm.git"
+  },
+  "author": "Ayush Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/findayush/node-farm/issues"
+  },
+  "homepage": "https://github.com/findayush/node-farm#readme",
+  "dependencies": {
+    "slugify": "^1.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

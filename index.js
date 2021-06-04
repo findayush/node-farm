@@ -1,7 +1,9 @@
 const fs = require('fs')
 const http = require('http')
 const url = require('url')
-const replaceTemp = require('./modules/replaceTemplate')
+const replaceTemp = require('./modules/replaceTemplate');
+
+const slugify = require('slugify')
 // FILES
 
 //Blocking, Synchronous Way
@@ -41,8 +43,10 @@ const dataObj = JSON.parse(data)
 const server = http.createServer((req, res)=>{
 
     const {query, pathname:path} = url.parse(req.url, true)
-    const baseURL = 'http://' + req.headers.host + '/';
-    const reqUrl = new URL(req.url,baseURL);
+    // const baseURL = 'http://' + req.headers.host + '/';
+    // const reqUrl = new URL(req.url,baseURL);
+
+        console.log(slugify('AJKS Jsa', {lower:true}))
     //overview page
     if(path === '/' || path === '/overview'){
 
