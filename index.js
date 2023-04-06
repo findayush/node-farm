@@ -11,7 +11,7 @@ const slugify = require('slugify')
 // console.log(textIn)
 // const textOut= `This is read : ${textIn}\n Created on ${Date.now()}`;
 // fs.writeFileSync('./txt/output.txt', textOut)
-// console.log('File written')
+//  console.log('File written')
 
 //Non-blocking, Asynchronous Way
 // fs.readFile('./txt/start.txt', 'utf-8', (err, data)=>{
